@@ -1,329 +1,316 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="scroll-smooth" lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#0079a6", // azul
-                        "primary-dark": "#005f7a", // Hover state
-                        "secondary": "#a66c13", // User requested secondary gold
-                        "background-light": "#F8FAFC", // Slate-50
-                        "background-dark": "#0f1e23",
-                    },
-                    fontFamily: {
-                        "display": ["Poppins", "sans-serif"],
-                        "body": ["Poppins", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.5rem",
-                        "lg": "0.75rem",
-                        "xl": "1rem",
-                        "2xl": "1.5rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0079a6", // azul
+            "primary-dark": "#005f7a", // cor do hover do azul
+            "secondary": "#a66c13", // dourado 
+            "background-light": "#F8FAFC", // cinza claro
+            "background-dark": "#0f1e23", // azul escuro
+          },
+          fontFamily: {
+            "display": ["Poppins", "sans-serif"],
+            "body": ["Poppins", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "2xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
 
-    <title>Jm marcondes engenharia e construção</title>
+  <title>Jm marcondes engenharia e construção</title>
 </head>
-<body class="bg-gray-200  font-body">
+
+<body id="#top" class="bg-gray-200  font-body">
   <!--HEADER MENU NAVE -->
-   <header class="fixed top-0 left-0 w-full bg-white z-50 shadow-lg">
-  <div class="container mx-auto px-8 h-28 flex items-center justify-between">
+  <header class="fixed top-0 left-0 w-full bg-white z-50 shadow-lg">
+    <div class="container mx-auto px-8 h-28 flex items-center justify-between">
 
-    <!-- LOGO -->
-    <img src="logo.png" alt="logo" class="w-52 h-auto">
+      <!-- LOGO -->
+      <a href="#top">
+        <img src="logo.png" alt="logo" class="w-52 h-auto">
+      </a>
 
-    <!-- MENU -->
-   <nav id="menu"
-  class="hidden
-         absolute top-28 left-0 w-full
+
+      <!-- MENU -->
+      <nav id="menu" class="hidden absolute top-28 left-0 w-full
          bg-white
-         flex flex-col items-center text-center
+         lg:flex flex-col items-center text-center
          px-6 py-6
          font-medium
-         lg:static lg:flex-row lg:bg-transparent lg:w-auto lg:p-0">
+         lg:static lg:flex-row lg:bg-transparent lg:w-auto ">
 
-  <!-- LINKS -->
-  <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
-    <a href="#" class="text-gray-500 hover:text-primary font-bold">Home</a>
-    <a href="#" class="text-gray-500 hover:text-primary font-bold">Quem Somos</a>
-    <a href="#" class="text-gray-500 hover:text-primary font-bold">Serviços</a>
-    <a href="#" class="text-gray-500 hover:text-primary font-bold">Contatos</a>
-  </div>
+        <!-- LINKS -->
+        <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-8 ">
+          <a href="#top" class="text-gray-500 hover:text-primary font-bold">Home</a>
+          <a href="quem-somos.html" class="text-gray-500 hover:text-primary font-bold">Quem Somos</a>
+          <a href="#" class="text-gray-500 hover:text-primary font-bold">Serviços</a>
+          <a href="#" class="text-gray-500 hover:text-primary font-bold mb-10 lg:mb-0">Contatos</a>
+        </div>
 
-  <!-- BOTÃO -->
-  <a href="#"
-     class="mt-6 lg:mt-0 lg:ml-6
+        <!-- BOTÃO -->
+        <a href="#" class="mt-6 lg:mt-0  lg:ml-6
             border border-gray-300 bg-primary text-gray-50
             px-5 py-4 rounded
             hover:bg-primary-dark transition">
-    Solicite seu orçamento
-  </a>
+          Solicite seu orçamento
+        </a>
 
-</nav>
+      </nav>
 
-    <!--BOTAO-HAMBURGUER-->
-    <button id="btn-menu" class="lg:hidden">
-  <img src="cardapio (1).png" alt="Menu" class="w-9 hover:bg-slate-200 rounded-[20%]">
-</button>
+      <!--BOTAO-HAMBURGUER-->
+      <button id="btn-menu" class="lg:hidden md:static ">
+        <img src="cardapio (1).png" alt="Menu" class="w-9 hover:bg-slate-200 rounded-[20%]">
+      </button>
 
-  </div>
-</header>
+    </div>
+  </header>
 
-   <main class="pt-28">
+  <main class="pt-28">
     <section class="relative w-full h-[300px] md:h-[400px] lg:h-[700px] overflow-hidden">
 
-  <!-- IMAGEM -->
-  <img 
-    src="9250736.jpeg" 
-    alt="Banner"
-    class="w-full h-full object-cover"
-  >
+      <!-- IMAGEM -->
+      <img src="9250736.jpeg" alt="Banner" class="w-full h-full object-cover">
 
-  <!-- TEXTO SOBRE A IMAGEM -->
-  <div class="absolute inset-0 flex items-center">
-    <div class="px-6 md:px-16 lg:px-24 max-w-2xl text-white">
-      
-      <h1 class="text-3xl text-gray-800 md:text-4xl lg:text-6xl font-bold mb-4">
-        <span class="text-primary">Engenharia </span>e Construção de Qualidade
-      </h1>
+      <!-- TEXTO SOBRE A IMAGEM -->
+      <div class="absolute inset-0 flex items-center">
+        <div class="px-6 md:px-16 lg:px-24 max-w-2xl text-white">
 
-      <p class="text-lg md:text-lg mb-6 text-gray-800">
-        Soluções completas em engenharia, construção e reformas com qualidade e compromisso.
-      </p>
+          <h1 class="text-3xl text-gray-800 md:text-4xl lg:text-6xl font-bold mb-4">
+            <span class="text-primary">Engenharia </span>e Construção de Qualidade
+          </h1>
 
-      <a href="#"
-         class="border border-gray-300 bg-primary text-gray-50 px-5 py-4 rounded hover:bg-primary-dark transition">
-        Solicite seu orçamento
-      </a>
+          <p class="text-lg md:text-lg mb-6 text-gray-800">
+            Soluções completas em engenharia, construção e reformas com qualidade e compromisso.
+          </p>
 
-    </div>
-  </div>
+          <a href="#"
+            class="border border-gray-300 bg-primary text-gray-50 px-5 py-4 rounded hover:bg-primary-dark transition">
+            Solicite seu orçamento
+          </a>
 
-</section>
+        </div>
+      </div>
 
-<section class="bg-white py-16">
-  <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    </section>
 
-    <!-- TEXTO QUEM SOMOS -->
-    <div> 
-      <h2 class="text-4xl md:text-4xl font-bold text-gray-800 mb-6 ">
-        Quem Somos
-      </h2>
+    <section class="bg-white py-16">
+      <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-     <p class="text-gray-600 mb-4">
-  A <strong class="text-primary">JM Marcondes Engenharia e Construção</strong> atua no mercado oferecendo soluções completas
-  em engenharia, construção e reformas, com foco em qualidade, segurança e satisfação do cliente.
-</p>
+        <!-- TEXTO QUEM SOMOS -->
+        <div>
+          <h2 class="text-4xl md:text-4xl font-bold text-gray-800 mb-6 ">
+            Quem Somos
+          </h2>
 
-<p class="text-gray-600 mb-4">
-  Fundada em <strong>2007</strong>, a empresa foi criada com o propósito de assessorar grandes empresas no desenvolvimento
-  imobiliário e executar obras de construção civil em todo o <strong>Estado de São Paulo</strong>.
-</p>
+          <p class="text-gray-600 mb-4">
+            A <strong class="text-primary">JM Marcondes Engenharia e Construção</strong> atua no mercado oferecendo
+            soluções completas
+            em engenharia, construção e reformas, com foco em qualidade, segurança e satisfação do cliente.
+          </p>
 
-<p class="text-gray-500 mb-6">
-  Trabalhamos com uma equipe qualificada e comprometida, acompanhando cada etapa do projeto — do planejamento
-  à entrega final — garantindo eficiência, transparência e cumprimento rigoroso de prazos.
-</p>
+          <p class="text-gray-600 mb-4">
+            Fundada em <strong>2007</strong>, a empresa foi criada com o propósito de assessorar grandes empresas no
+            desenvolvimento
+            imobiliário e executar obras de construção civil em todo o <strong>Estado de São Paulo</strong>.
+          </p>
+
+          <p class="text-gray-500 mb-6">
+            Trabalhamos com uma equipe qualificada e comprometida, acompanhando cada etapa do projeto — do planejamento
+            à entrega final — garantindo eficiência, transparência e cumprimento rigoroso de prazos.
+          </p>
 
 
-      <a href=""
-         class="inline-block bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded transition">
-        Conheça mais sobre nós
-      </a>
-    </div>
+          <a href="" class="inline-block bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded transition">
+            Conheça mais sobre nós
+          </a>
+        </div>
 
-    <!-- IMAGEM -->
-    <div class="relative">
-      <img 
-        src="quem-somos2.jpeg"
-        alt="Equipe JM Marcondes Engenharia"
-        class="rounded-xl shadow-lg w-full h-auto object-cover"
-      >
-    </div>
+        <!-- IMAGEM -->
+        <div class="relative">
+          <img src="quem-somos2.jpeg" alt="Equipe JM Marcondes Engenharia"
+            class="rounded-xl shadow-lg w-full h-auto object-cover">
+        </div>
 
-  </div>
-</section>
+      </div>
+    </section>
 
- <!-- NOSSOS SERVIÇOS-->
-   <section class=" bg-background-light py-16">
-  <div class="container mx-auto px-6 md:px-14">
+    <!-- NOSSOS SERVIÇOS-->
+    <section class=" bg-background-light py-16">
+      <div class="container mx-auto px-6 md:px-14">
 
-    <!-- TÍTULO -->
-     <div>
-      
-     </div>
-    <div class="text-center mb-12">
-      
-     <h2 class="text-4xl md:text-4xl font-bold text-gray-800 mb-6 ">
-        Nossos Serviços
-      </h2>
-      <p class="text-gray-500 max-w-2xl mx-auto">
-        Atuamos com excelência em todas as etapas da sua obra, do projeto à entrega final.
-      </p>
-    </div>
+        <!-- TÍTULO -->
+        <div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        </div>
+        <div class="text-center mb-12">
 
-  <!-- CARD 1 -->
-  <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg">
-    <img 
-      src="cosntruçao-civil.jpg"
-      alt="Construção Civil"
-      class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-    >
+          <h2 class="text-4xl md:text-4xl font-bold text-gray-800 mb-6 ">
+            Nossos Serviços
+          </h2>
+          <p class="text-gray-500 max-w-2xl mx-auto">
+            Atuamos com excelência em todas as etapas da sua obra, do projeto à entrega final.
+          </p>
+        </div>
 
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/30"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <!-- Conteúdo -->
-    <div class="relative z-10 p-8 flex flex-col justify-end h-full text-white">
-      <h3 class="text-2xl font-bold mb-3">Construção Civil</h3>
-      <p class="text-sm mb-4">
-        Obras residenciais, comerciais e industriais com qualidade e segurança.
-      </p>
-      <a href="#" class="font-semibold text-secondary hover:underline">
-        Saiba mais →
-      </a>
-    </div>
-  </div>
+          <!-- CARD 1 -->
+          <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg">
+            <img src="cosntruçao-civil.jpg" alt="Construção Civil"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
-  <!-- CARD 2 -->
-  <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg">
-    <img 
-      src="manutençao.jpg"
-      alt="Projetos de Engenharia"
-      class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-    >
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/30"></div>
 
-    <div class="absolute inset-0 bg-black/30"></div>
+            <!-- Conteúdo -->
+            <div class="relative z-10 p-8 flex flex-col justify-end h-full text-white">
+              <h3 class="text-2xl font-bold mb-3">Construção Civil</h3>
+              <p class="text-sm mb-4">
+                Obras residenciais, comerciais e industriais com qualidade e segurança.
+              </p>
+              <a href="#" class="font-semibold text-secondary hover:underline">
+                Saiba mais →
+              </a>
+            </div>
+          </div>
 
-    <div class="relative z-10 p-8 flex flex-col justify-end h-full text-white">
-      <h3 class="text-2xl font-bold mb-3">Projetos de Engenharia</h3>
-      <p class="text-sm mb-4">
-        Projetos estruturais e acompanhamento técnico especializado.
-      </p>
-      <a href="#" class="font-semibold text-secondary hover:underline">
-        Saiba mais →
-      </a>
-    </div>
-  </div>
+          <!-- CARD 2 -->
+          <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg">
+            <img src="manutençao.jpg" alt="Projetos de Engenharia"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
-  <!-- CARD 3 -->
-  <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg">
-    <img 
-      src="reforma-geral.jpg"
-      alt="Reformas e Manutenção"
-      class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-    >
+            <div class="absolute inset-0 bg-black/30"></div>
 
-    <div class="absolute inset-0 bg-black/20"></div>
+            <div class="relative z-10 p-8 flex flex-col justify-end h-full text-white">
+              <h3 class="text-2xl font-bold mb-3">Projetos de Engenharia</h3>
+              <p class="text-sm mb-4">
+                Projetos estruturais e acompanhamento técnico especializado.
+              </p>
+              <a href="#" class="font-semibold text-secondary hover:underline">
+                Saiba mais →
+              </a>
+            </div>
+          </div>
 
-    <div class="relative z-10 p-8 flex flex-col justify-end h-full text-white">
-      <h3 class="text-2xl font-bold mb-3">Reformas e Manutenção</h3>
-      <p class="text-sm mb-4">
-        Reformas residenciais e comerciais com acabamento de alto padrão.
-      </p>
-      <a href="#" class="font-semibold text-secondary hover:underline">
-        Saiba mais →
-      </a>
-    </div>
-  </div>
+          <!-- CARD 3 -->
+          <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg">
+            <img src="reforma-geral.jpg" alt="Reformas e Manutenção"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
-</div>
+            <div class="absolute inset-0 bg-black/20"></div>
 
-</section>
+            <div class="relative z-10 p-8 flex flex-col justify-end h-full text-white">
+              <h3 class="text-2xl font-bold mb-3">Reformas e Manutenção</h3>
+              <p class="text-sm mb-4">
+                Reformas residenciais e comerciais com acabamento de alto padrão.
+              </p>
+              <a href="#" class="font-semibold text-secondary hover:underline">
+                Saiba mais →
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+    </section>
 
 
-   
+
     <!-- BOTÃO WHATSAPP FLUTUANTE -->
-<a
-  href="https://wa.me/5599999999999"
-  target="_blank"
-  class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-16 md:w-16 md:h-16 rounded-full shadow-lg transition "
-  aria-label="WhatsApp"
->
-  <img src="whatsapp.png" alt="">
-</a>
+    <a href="https://wa.me/5599999999999" target="_blank"
+      class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-16 md:w-16 md:h-16 rounded-full shadow-lg transition "
+      aria-label="WhatsApp">
+      <img src="whatsapp.png" alt="">
+    </a>
 
- 
-<section class=" relative flex flex-col items-center justify-center text-center gap-6 p-16">
 
-<div class="absolute inset-0 p-16 bg-[url('engenharia.jpg')] bg-cover bg-center">
+    <section class=" relative flex flex-col items-center justify-center text-center gap-6 p-16">
 
-</div>
+      <div class="absolute inset-0 p-16 bg-[url('engenharia.jpg')] bg-cover bg-center">
 
-<div class="absolute inset-0 bg-slate-950/80"></div>
-<h2 class=" relative z-10 text-4xl md:text-4xl font-bold text-white mb-6 ">
+      </div>
+
+      <div class="absolute inset-0 bg-slate-950/80"></div>
+      <h2 class=" relative z-10 text-4xl md:text-4xl font-bold text-white mb-6 ">
         Pronto para iniciar seu projeto?
       </h2>
 
-<p class="relative z-10 text-white text-lg">Entre em contato hoje mesmo e descubra como a JM Marcondes <br>pode elevar o nível da sua construção</p>
+      <p class="relative z-10 text-white text-lg">Entre em contato hoje mesmo e descubra como a JM Marcondes <br>pode
+        elevar o nível da sua construção</p>
 
- <a href="#"
-         class=" relative z-10 border border-gray-300 bg-primary text-gray-50 px-5 py-4 rounded hover:bg-primary-dark transition">
+      <a href="#"
+        class=" relative z-10 border border-gray-300 bg-primary text-gray-50 px-5 py-4 rounded hover:bg-primary-dark transition">
         Solicite seu orçamento
       </a>
 
-</section>
-  
-<footer class="bg-gray-100 text-gray-900 py-10"> 
-    <!-- Logo -->
-<div class="container mx-auto px-6 mb-6">
-  <div class="mb-7">
-    <img src="logo.png" alt="logo-footer" class=" ml-3 w-52 h-auto ">
-    <p class=" mt-10 w-96 text-gray-500">Compromisso com a qualidade e inovação na construção civil. Transformando visões em estruturas sólidas.</p>
-  </div>
-</div>
+    </section>
 
- <!-- Conteúdo do FOOTER -->
-  <div class="container mx-auto px-6"></div>
-<div class="px-6 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl  mx-auto  justify-items-center">
-  <div class="text-center md:text-left">
-<h3 class="font-extrabold">Navegaçao</h3>
-<ul>
-<li><a href="" class=" text-gray-500 hover:text-primary  transition">Inicio</a></li>
-<li><a href="" class=" text-gray-500 hover:text-primary transition">Quem Somos</a></li>
-<li><a href="" class="text-gray-500 hover:text-primary transition">Serviços</a></li>
-<li><a href="" class="text-gray-500 hover:text-primary transition">Projetos</a></li>
-</ul>
-</div>
+    <footer class="bg-gray-100 text-gray-900 py-10">
+      <!-- Logo -->
+      <div class="container mx-auto px-6 mb-6">
+        <div class="mb-7">
+          <img src="logo.png" alt="logo-footer" class=" ml-3 w-52 h-auto ">
+          <p class=" mt-10 w-96 text-gray-500">Compromisso com a qualidade e inovação na construção civil. Transformando
+            visões em estruturas sólidas.</p>
+        </div>
+      </div>
 
-  <div class="text-center md:text-left">
-<h3 class="font-extrabold">Serviços</h3>
-<ul>
-<li><a href=""  class="text-gray-500 hover:text-primary transition">Construção Civil</a></li>
-<li><a href=""  class="text-gray-500 hover:text-primary transition">Reformas</a></li>
-<li><a href=""  class="text-gray-500 hover:text-primary transition">Projetos Arquitetônicos</a></li>
-<li><a href=""  class="text-gray-500 hover:text-primary transition">Consultoria</a></li>
-</ul>
+      <!-- Conteúdo do FOOTER -->
+      <div class="container mx-auto px-6"></div>
+      <div class="px-6 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl  mx-auto  justify-items-center">
+        <div class="text-center md:text-left">
+          <h3 class="font-extrabold">Navegaçao</h3>
+          <ul>
+            <li><a href="" class=" text-gray-500 hover:text-primary  transition">Inicio</a></li>
+            <li><a href="" class=" text-gray-500 hover:text-primary transition">Quem Somos</a></li>
+            <li><a href="" class="text-gray-500 hover:text-primary transition">Serviços</a></li>
+            <li><a href="" class="text-gray-500 hover:text-primary transition">Projetos</a></li>
+          </ul>
+        </div>
 
-  </div class="text-center md:text-left">
-   <div>
-<h3 class="font-extrabold ">Contato</h3>
-<ul>
-<li><a href="" class="text-gray-500 hover:text-primary transition">Projetos</a></li>
-<li><a href="" class="text-gray-500 hover:text-primary transition">Projetos</a></li>
-<li><a href="" class="text-gray-500 hover:text-primary transition">Projetos</a></li>
-<li><a href="" class="text-gray-500 hover:text-primary transition">Projetos</a></li>
-</ul>
-  </div>
-</div>
-</div>
+        <div class="text-center md:text-left">
+          <h3 class="font-extrabold">Serviços</h3>
+          <ul>
+            <li><a href="" class="text-gray-500 hover:text-primary transition">Construção Civil</a></li>
+            <li><a href="" class="text-gray-500 hover:text-primary transition">Reformas</a></li>
+            <li><a href="" class="text-gray-500 hover:text-primary transition">Projetos Arquitetônicos</a></li>
+            <li><a href="" class="text-gray-500 hover:text-primary transition">Consultoria</a></li>
+          </ul>
 
-</footer>
+        </div class="text-center md:text-left">
+        <div>
+          <h3 class="font-extrabold ">Contato</h3>
+          <ul>
+            <li><a href="" class="text-gray-500 hover:text-primary transition">Projetos</a></li>
+            <li><a href="" class="text-gray-500 hover:text-primary transition">Projetos</a></li>
+            <li><a href="" class="text-gray-500 hover:text-primary transition">Projetos</a></li>
+            <li><a href="" class="text-gray-500 hover:text-primary transition">Projetos</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+    </footer>
 
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
