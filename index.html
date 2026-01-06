@@ -40,7 +40,7 @@
 <body id="#top" class="bg-gray-200  font-body">
   <!--HEADER MENU NAVE -->
   <header class="fixed top-0 left-0 w-full bg-white z-50 shadow-lg">
-    <div class="container mx-auto px-8 h-28 flex items-center justify-between">
+    <div class="container mx-auto px-16 h-28 flex items-center justify-between">
 
       <!-- LOGO -->
       <a href="#top">
@@ -85,12 +85,12 @@
   <main class="pt-28">
     <section class="relative w-full h-[300px] md:h-[400px] lg:h-[700px] overflow-hidden">
 
-      <!-- IMAGEM -->
+      <!-- IMAGEM BANNER-->
       <img src="9250736.jpeg" alt="Banner" class="w-full h-full object-cover">
 
       <!-- TEXTO SOBRE A IMAGEM -->
       <div class="absolute inset-0 flex items-center">
-        <div class="px-6 md:px-16 lg:px-24 max-w-2xl text-white">
+        <div class="px-16 md:px-16 lg:px-24 max-w-2xl text-white">
 
           <h1 class="text-3xl text-gray-800 md:text-4xl lg:text-6xl font-bold mb-4">
             <span class="text-primary">Engenharia </span>e Construção de Qualidade
@@ -109,47 +109,47 @@
       </div>
 
     </section>
-
+ <!-- SEÇÃO QUEM SOMOS -->
     <section class="bg-white py-16">
-      <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+  <div class="container mx-auto px-4 sm:px-6 md:px-12
+              grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <!-- TEXTO -->
+    <div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+        Quem Somos
+      </h2>
 
-        <!-- TEXTO QUEM SOMOS -->
-        <div>
-          <h2 class="text-4xl md:text-4xl font-bold text-gray-800 mb-6 ">
-            Quem Somos
-          </h2>
+      <p class="text-gray-600 mb-4 text-base sm:text-lg">
+        A <strong class="text-primary">JM Marcondes Engenharia e Construção</strong> atua no mercado oferecendo
+        soluções completas em engenharia, construção e reformas, com foco em qualidade, segurança e satisfação do cliente.
+      </p>
 
-          <p class="text-gray-600 mb-4">
-            A <strong class="text-primary">JM Marcondes Engenharia e Construção</strong> atua no mercado oferecendo
-            soluções completas
-            em engenharia, construção e reformas, com foco em qualidade, segurança e satisfação do cliente.
-          </p>
+      <p class="text-gray-600 mb-4 text-base sm:text-lg">
+        Fundada em <strong>2007</strong>, a empresa foi criada com o propósito de assessorar grandes empresas no
+        desenvolvimento imobiliário e executar obras de construção civil em todo o <strong>Estado de São Paulo</strong>.
+      </p>
 
-          <p class="text-gray-600 mb-4">
-            Fundada em <strong>2007</strong>, a empresa foi criada com o propósito de assessorar grandes empresas no
-            desenvolvimento
-            imobiliário e executar obras de construção civil em todo o <strong>Estado de São Paulo</strong>.
-          </p>
+      <p class="text-gray-500 mb-6 text-base sm:text-lg">
+        Trabalhamos com uma equipe qualificada e comprometida, acompanhando cada etapa do projeto — do planejamento
+        à entrega final — garantindo eficiência, transparência e cumprimento rigoroso de prazos.
+      </p>
 
-          <p class="text-gray-500 mb-6">
-            Trabalhamos com uma equipe qualificada e comprometida, acompanhando cada etapa do projeto — do planejamento
-            à entrega final — garantindo eficiência, transparência e cumprimento rigoroso de prazos.
-          </p>
+      <a href="#" class="inline-block bg-primary hover:bg-primary-dark text-white
+                        px-6 py-3 rounded transition">
+        Conheça mais sobre nós
+      </a>
+    </div>
 
+    <!-- IMAGEM -->
+    <div>
+      <img src="quem-somos2.jpeg"
+           alt="Equipe JM Marcondes Engenharia"
+           class="rounded-xl shadow-lg w-full h-[260px] sm:h-[320px] md:h-auto object-cover">
+    </div>
 
-          <a href="" class="inline-block bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded transition">
-            Conheça mais sobre nós
-          </a>
-        </div>
+  </div>
+</section>
 
-        <!-- IMAGEM -->
-        <div class="relative">
-          <img src="quem-somos2.jpeg" alt="Equipe JM Marcondes Engenharia"
-            class="rounded-xl shadow-lg w-full h-auto object-cover">
-        </div>
-
-      </div>
-    </section>
 
     <!-- NOSSOS SERVIÇOS-->
     <section class=" bg-background-light py-16">
@@ -164,7 +164,7 @@
           <h2 class="text-4xl md:text-4xl font-bold text-gray-800 mb-6 ">
             Nossos Serviços
           </h2>
-          <p class="text-gray-500 max-w-2xl mx-auto">
+          <p class="text-gray-500 max-w-2xl mx-auto text-lg">
             Atuamos com excelência em todas as etapas da sua obra, do projeto à entrega final.
           </p>
         </div>
@@ -175,14 +175,13 @@
           <div class="relative h-80 rounded-xl overflow-hidden group shadow-lg">
             <img src="cosntruçao-civil.jpg" alt="Construção Civil"
               class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-
             <!-- Overlay -->
             <div class="absolute inset-0 bg-black/30"></div>
 
             <!-- Conteúdo -->
             <div class="relative z-10 p-8 flex flex-col justify-end h-full text-white">
               <h3 class="text-2xl font-bold mb-3">Construção Civil</h3>
-              <p class="text-sm mb-4">
+              <p class=" mb-4 text-lg">
                 Obras residenciais, comerciais e industriais com qualidade e segurança.
               </p>
               <a href="#" class="font-semibold text-secondary hover:underline">
@@ -200,7 +199,7 @@
 
             <div class="relative z-10 p-8 flex flex-col justify-end h-full text-white">
               <h3 class="text-2xl font-bold mb-3">Projetos de Engenharia</h3>
-              <p class="text-sm mb-4">
+              <p class="text-lg mb-4">
                 Projetos estruturais e acompanhamento técnico especializado.
               </p>
               <a href="#" class="font-semibold text-secondary hover:underline">
@@ -218,7 +217,7 @@
 
             <div class="relative z-10 p-8 flex flex-col justify-end h-full text-white">
               <h3 class="text-2xl font-bold mb-3">Reformas e Manutenção</h3>
-              <p class="text-sm mb-4">
+              <p class="text-lg mb-4">
                 Reformas residenciais e comerciais com acabamento de alto padrão.
               </p>
               <a href="#" class="font-semibold text-secondary hover:underline">
@@ -240,7 +239,7 @@
       <img src="whatsapp.png" alt="">
     </a>
 
-
+ <!-- SEÇÃO PRONTO PARA INICIAR PROJETO -->
     <section class=" relative flex flex-col items-center justify-center text-center gap-6 p-16">
 
       <div class="absolute inset-0 p-16 bg-[url('engenharia.jpg')] bg-cover bg-center">
@@ -264,7 +263,7 @@
 
     <footer class="bg-gray-100 text-gray-900 py-10">
       <!-- Logo -->
-      <div class="container mx-auto px-6 mb-6">
+      <div class="container mx-auto px-16 mb-6">
         <div class="mb-7">
           <img src="logo.png" alt="logo-footer" class=" ml-3 w-52 h-auto ">
           <p class=" mt-10 w-96 text-gray-500">Compromisso com a qualidade e inovação na construção civil. Transformando
@@ -274,7 +273,7 @@
 
       <!-- Conteúdo do FOOTER -->
       <div class="container mx-auto px-6"></div>
-      <div class="px-6 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl  mx-auto  justify-items-center">
+      <div class="px-6 grid grid-cols-3 md:grid-cols-3 gap-8 max-w-4xl  mx-auto  justify-items-center">
         <div class="text-center md:text-left">
           <h3 class="font-extrabold">Navegaçao</h3>
           <ul>
